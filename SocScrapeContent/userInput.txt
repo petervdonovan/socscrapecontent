@@ -1,0 +1,83 @@
+python socscrapecontent.py
+https://browning-soc-lbusd-ca.schoolloop.com/
+Browning
+
+Browning
+
+python socscrapecontent.py
+https://cabrillo-soc-lbusd-ca.schoolloop.com/
+AGL
+CALJ
+CED
+SACMAA
+
+Cabrillo
+
+python socscrapecontent.py
+https://cams-soc-lbusd-ca.schoolloop.com/
+CAMS
+
+CAMS
+
+python socscrapecontent.py
+https://jordan-soc-lbusd-ca.schoolloop.com/
+ACE
+AIMS
+IB
+JMAC
+LEAPS
+NAF
+
+Jordan
+
+python socscrapecontent.py
+https://lakewood-soc-lbusd-ca.schoolloop.com/
+ATM
+DMAC
+HOSM
+MERIT SCHOLARS
+ODYSSEY
+
+Lakewood
+
+python socscrapecontent.py
+https://mcbride-soc-lbusd-ca.schoolloop.com/
+CJI
+Engineering
+Health and Medical
+
+McBride
+
+python socscrapecontent.py
+https://millikan-soc-lbusd-ca.schoolloop.com/
+COMPASS
+MBA
+PEACE
+QUEST
+SEGA
+
+Millikan
+
+python socscrapecontent.py
+https://poly-soc-lbusd-ca.schoolloop.com/
+Poly ARTS
+BEACH
+CIC
+JUSTICE
+MEDS
+PACE
+PACRIM
+
+Poly
+
+python socscrapecontent.py
+https://renaissance-soc-lbusd-ca.schoolloop.com/
+Renaissance
+
+Renaissance
+
+python socscrapecontent.py
+https://sato-soc-lbusd-ca.schoolloop.com/
+SATO
+
+Sato

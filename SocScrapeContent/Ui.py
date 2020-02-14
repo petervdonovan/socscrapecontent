@@ -1,5 +1,6 @@
 import requests
 from Pathway import Pathway
+from ClubsList import ClubsList
 from XlsxMake import XlsxMake
 
 class Ui:
@@ -7,8 +8,8 @@ class Ui:
         self.path = ''
         self.baseUrl = ''
         self.pathways = []
+        self.clubs = []
         self.xlsxMake = None
-        self.pathways = []
 
     def getPath(self):
         if not self.path: self.path = input('File name: ')
@@ -23,18 +24,24 @@ class Ui:
     def getPathways(self, suffix = ''):
         self.getBaseUrl()
         response = input('Pathway name: ')
-        if not response: return
+        if not response: return self.pathways
         site = requests.get(self.getBaseUrl() + response.replace(' ', '-') + suffix)
         if not site:
             print('No site was found for the specified pathway.')
-            return 1
+            return self.getPathways(suffix=suffix)
         else:
             self.pathways.extend(Pathway(site.text).getAll())
-        return self.pathways
+            return self.getPathways(suffix=suffix)
+
+    def getClubs(self, suffix = ''):
+        self.getBaseUrl()
+        site = requests.get(self.getBaseUrl() + 'clubs' + suffix)
+        self.clubs = ClubsList(site.text).getAll()
+        return self.clubs
 
     def makeXlsx(self, sectionWidth, sectionHeight):        
-        self.xlsxMake = XlsxMake(self.pathways)
-        self.xlsxMake.format(sectionWidth, sectionHeight)
+        self.xlsxMake = XlsxMake(self.pathways, self.clubs)
+        self.xlsxMake.make(sectionWidth, sectionHeight)
 
     def save(self):
         self.xlsxMake.save(self.getPath())

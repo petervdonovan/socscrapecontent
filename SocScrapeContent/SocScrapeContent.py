@@ -1,6 +1,7 @@
 from Ui import Ui
 
 ui = Ui()
-while(ui.getPathways(suffix = '-test')): pass
+ui.getPathways()
+ui.getClubs()
 ui.makeXlsx(6, 25)
 ui.save()

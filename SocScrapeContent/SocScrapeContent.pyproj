@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ClubsList.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Ui.py">
       <SubType>Code</SubType>
     </Compile>
