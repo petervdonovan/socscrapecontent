@@ -38,6 +38,15 @@
     <Compile Include="SocScrapeContent.py" />
   </ItemGroup>
   <ItemGroup>
+    <Interpreter Include="..\..\..\..\..\.virtualenvs\env-64bit\">
+      <Id>env-64bit1</Id>
+      <Version>3.7</Version>
+      <Description>env-64bit (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
     <Interpreter Include="..\..\..\..\.virtualenvs\env-64bit-zW-3vufm\">
       <Id>env-64bit-zW-3vufm</Id>
       <Version>3.7</Version>
